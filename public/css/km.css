@@ -1,0 +1,449 @@
+#km_panel_container {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    right: 20px;
+    z-index: 99;
+}
+#km_panel_container2 {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    right: 20px;
+    z-index: 99;
+}
+
+.km_info_window_wrapper {
+    font-size: 12px;
+    color: #444444;
+}
+.km_info_window_wrapper .km_info_element {
+    display: block;
+    margin: 0 0 5px 0;
+}
+.km_info_window_wrapper .km_info_element b {
+    font-weight: 600;
+}
+.km_info_window_wrapper .km_info_element .km_info_separation {
+    margin: 0 0 0 3px;
+}
+.km_info_window_wrapper .km_info_element .km_info_float_label {
+    float: left;
+    display: block;
+}
+.km_info_window_wrapper .km_info_element .km_info_element_icon {
+    width: 12px;
+    height: 12px;
+    display: block;
+    float: left;
+    margin: 0px 0 0 5px;
+}
+.km_panel {
+    -webkit-box-shadow: -1px 1px 3px #bbbbbb ;
+    -moz-box-shadow: -1px 1px 3px #bbbbbb ;
+    -o-box-shadow: -1px 1px 3px #bbbbbb ;
+    -ms-box-shadow: -1px 1px 3px #bbbbbb ;
+    box-shadow: -1px 1px 3px #bbbbbb ;
+    background: none repeat scroll 0 0 #FFFFFF;
+    display: none;
+}
+.km_panel#km_map_layer_panel {
+    -webkit-box-shadow: -1px 1px 3px #bbbbbb ;
+    -moz-box-shadow: -1px 1px 3px #bbbbbb ;
+    -o-box-shadow: -1px 1px 3px #bbbbbb ;
+    -ms-box-shadow: -1px 1px 3px #bbbbbb ;
+    box-shadow: -1px 1px 3px #bbbbbb ;
+    width: 700px;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -350px;
+}
+.km_panel#km_map_layer_panel #km_map_layer_panel_wrapper {
+    margin: 30px 0 0 0;
+    padding: 0 20px 0 20px;
+}
+.km_panel a.km_map_layer_trigger, .km_panel a.km_map_layer_trigger:link, .km_panel a.km_map_layer_trigger:hover, .km_panel a.km_map_layer_trigger:active, .km_panel a.km_map_layer_trigger:visited {
+    border: 0 none;
+    outline: none;
+    display: block;
+    float: left;
+    margin: 0 10px 10px 0;
+    cursor: pointer;
+}
+.km_panel a.km_map_layer_trigger span.km_map_layer_trigger_color {
+    -webkit-border-radius: 2px 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px 2px;
+    -o-border-radius: 2px 2px 2px 2px;
+    -ms-border-radius: 2px 2px 2px 2px;
+    border-radius: 2px 2px 2px 2px;
+    width: 16px;
+    height: 12px;
+    display: block;
+    float: left;
+}
+.km_panel a.km_map_layer_trigger span.km_map_layer_trigger_label {
+    float: left;
+    font-size: 12px;
+    color: #444444;
+    margin: 0 0 0 5px;
+}
+.km_panel a.km_map_layer_trigger.disabled span.km_map_layer_trigger_label {
+    color: #CCCCCC;
+}
+.km_panel.km_left_panel {
+    -webkit-box-shadow: 1px 1px 3px #bbbbbb ;
+    -moz-box-shadow: 1px 1px 3px #bbbbbb ;
+    -o-box-shadow: 1px 1px 3px #bbbbbb ;
+    -ms-box-shadow: 1px 1px 3px #bbbbbb ;
+    box-shadow: 1px 1px 3px #bbbbbb ;
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    left: 0px;
+    top: 30px; }
+.km_panel.km_left_panel .km_panel_content {
+    padding: 15px 15px; }
+.km_panel.km_left_panel .km_panel_content .km_panel_content_element {
+    margin: 0 0 20px 0;
+    padding: 0 0 25px 0;
+    border-bottom: 1px solid #CCCCCC; }
+.km_panel.km_left_panel .km_panel_content .km_panel_content_element.last {
+    border-bottom: 0 none; }
+.km_panel.km_left_panel .km_panel_content .km_panel_content_element .km_panel_content_link_input {
+    color: #999999;
+    width: 100%;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #D3D3D3;
+    width: 558px;
+    padding: 2px 5px; }
+.km_panel.km_left_panel .km_panel_content .km_panel_content_element input[type="text"].km_panel_content_link_input {
+    font-size: 22px; }
+.km_panel.km_left_panel .km_panel_content .km_panel_content_element textarea.km_panel_content_link_input {
+    height: 30px;
+    font-size: 13px;
+    font-family: "Open Sans", Arial, sans-serif;
+    height: 120px; }
+.km_panel.km_left_panel .km_panel_content h1.km_panel_content_title {
+    font-size: 18px;
+    color: #444444;
+    padding: 0 0 20px 0; }
+.km_panel.km_left_panel .km_panel_content .km_panel_content_title_label {
+    float: left;
+    margin: 0 0 0 5px;
+    display: block; }
+.km_panel.km_left_panel .km_panel_content .km_panel_content_title_icon {
+    display: block;
+    width: 18px;
+    height: 18px;
+    float: left; }
+.km_panel#km_chart_panel #km_chart_panel_wrapper {
+    width: 100%;
+    height: 370px;
+    position: relative; }
+.km_panel#km_chart_panel .km_chart_panel_chart_element {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+.km_panel#km_chart_panel .km_chart_panel_chart_element_wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+.km_panel#km_chart_panel .km_chart_panel_chart_loader {
+    display: none;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -17px;
+    margin-top: -17px; }
+.km_panel#km_chart_panel h1.km_chart_panel_chart_error {
+    display: none;
+    width: 490px;
+    height: 16px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -245px;
+    margin-top: -8px;
+    color: #A30000;
+    text-align: center;
+    font-size: 12px; }
+.km_panel#km_panel {
+    width: 250px;
+    height: 350px; }
+.km_panel#km_panel2 {
+    width: 250px;
+    height: 190px; }
+
+.km_panel#km_panel3 {
+    width: 250px;
+    height: 387px; }
+
+
+.km_panel#km_panel.km_panel_header_title {
+    width: 190px; }
+.km_panel#km_small_panel {
+    width: 40px;
+    height: 195px; }
+.km_panel#km_small_panel .km_panel_header_actions {
+    margin: 9px 15px 0 0; }
+.km_panel .km_panel_actions {
+    position: absolute;
+    right: 10px;
+    top: 3px; }
+.km_panel a.km_panel_action, #km .km_panel a.km_panel_action:link, .km_panel a.km_panel_action:hover, .km_panel a.km_panel_action:active, .km_panel a.km_panel_action:visited {
+    border: 0 none;
+    outline: none;
+    display: block;
+    float: right;
+    width: 14px;
+    height: 14px;
+    margin: 0 0 0 5px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer; }
+.km_panel a.km_panel_action img {
+    width: 14px;
+    height: 28px;
+    position: absolute;
+    left: 0px;
+    top: 0px; }
+.km_panel a.km_panel_action:hover img {
+    top: -14px; }
+.km_panel .km_panel_header {
+    height: 30px;
+    background: none repeat scroll 0 0 #000;
+    background-image: -moz-linear-gradient(top, #000, #000);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #000), color-stop(1, #000));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#36b1f9', EndColorStr='#1370a8')";
+    border-bottom: 1px solid #222222; }
+.km_panel .km_panel_header_title {
+    float: left;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 12px;
+    margin: 8px 0 0 10px;
+    width: 200px; }
+.km_panel .km_panel_header_actions {
+    float: right;
+    margin: 8px 7px 0 0; }
+.km_panel a.km_panel_header_action, .km_panel a.km_panel_header_action:link, .km_panel a.km_panel_header_action:hover, .km_panel a.km_panel_header_action:active, .km_panel a.km_panel_header_action:visited {
+    border: 0 none;
+    outline: none;
+    width: 14px;
+    height: 14px;
+    display: block;
+    cursor: pointer;
+    float: left;
+    margin: 0 0 0 6px; }
+.km_panel a.km_panel_header_action img.km_panel_header_action_img {
+    width: 14px;
+    height: 14px;
+    display: block;
+    border: 0 none;
+    outline: none; }
+.km_panel .km_panel_small_element {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-bottom: 1px solid #CCCCCC; }
+.km_panel a.km_panel_small_element_trigger, .km_panel a.km_panel_small_element_trigger:link, .km_panel a.km_panel_small_element_trigger:hover, .km_panel a.km_panel_small_element_trigger:active, .km_panel a.km_panel_small_element_trigger:visited {
+    border: 0 none;
+    outline: none;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    top: 50%;
+    margin-left: -15px;
+    margin-top: -15px;
+    cursor: pointer; }
+.km_panel a.km_panel_small_element_trigger img {
+    display: block;
+    border: 0 none;
+    outline: none;
+    width: 30px;
+    height: 60px;
+    position: absolute;
+    left: 0px;
+    top: 0px; }
+.km_panel a.km_panel_small_element_trigger:hover img, .km_panel a.km_panel_small_element_trigger.active img {
+    top: -30px; }
+.km_panel .km_panel_element {
+    position: relative; }
+.km_panel .km_panel_element.full {
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #CCCCCC; }
+.km_panel .km_panel_element.full .km_panel_element_title {
+    left: 10px;
+    top: 3px; }
+.km_panel .km_panel_element.full .km_panel_element_actions {
+    right: 10px;
+    top: 3px;
+}
+.km_panel .km_panel_element.full img.main_icon {
+    width: 55px;
+    height: 45px; }
+.km_panel .km_panel_element.small {
+    width: 122px;
+    height: 110px;
+    float: left;
+    margin: 0 0 0 2px; }
+.km_panel .km_panel_element.small .km_panel_element_stat, .km_panel .km_panel_element.small .km_panel_element_unit {
+    left: 50%;
+    width: 80px;
+    margin-left: -35px;
+    text-align: center; }
+.km_panel .km_panel_element.small .km_panel_element_stat {
+    font-size: 15px;
+    top: 56px; }
+.km_panel .km_panel_element.small .km_panel_element_unit {
+    font-size: 11px;
+    top: 75px; }
+.km_panel .km_panel_element.small .km_panel_element_title {
+    left: 30px;
+    top: 5px; }
+.km_panel .km_panel_element.small .km_panel_element_actions {
+    right: 4px;
+    top: 92px; }
+.km_panel .km_panel_element.small img.main_icon {
+    width: 30px;
+    height: 30px;
+    top: 22px;
+    left: 50%;
+    margin-left: -15px; }
+.km_panel .km_panel_element.shops .km_panel_element_stat, .km_panel .km_panel_element.shops .km_panel_element_unit {
+    left: 80px; }
+.km_panel .km_panel_element.shops .km_panel_element_stat {
+    width: 150px;
+    font-size: 14px;
+    top: 30px; }
+.km_panel .km_panel_element.shops .km_panel_element_unit {
+    width: 120px;
+    font-size: 12px;
+    top: 55px; }
+.km_panel .km_panel_element.shops img.main_icon {
+    left: 15px;
+    top: 25px; }
+.km_panel .km_panel_element.loading {
+    /*border-bottom: 0 none;*/ }
+.km_panel .km_panel_element.loading .km_panel_element_stat, .km_panel .km_panel_element.loading .km_panel_element_unit {
+    left: 70px;
+    width: 70px; }
+.km_panel .km_panel_element.loading .km_panel_element_stat.second, .km_panel .km_panel_element.loading .km_panel_element_unit.second {
+    left: 175px; }
+.km_panel .km_panel_element.loading .km_panel_element_stat {
+    font-size: 14px;
+    top: 30px; }
+.km_panel .km_panel_element.loading .km_panel_element_unit {
+    font-size: 11px;
+    top: 55px; }
+.km_panel .km_panel_element.loading img.main_icon {
+    left: 10px;
+    top: 23px; }
+.km_panel .km_panel_element.uff_ucf {
+    border-bottom: 0 none; }
+.km_panel .km_panel_element.uff_ucf .km_panel_element_stat,
+.km_panel .km_panel_element.uff_ucf .km_panel_element_unit {
+    left: 80px;
+    width: 80px; }
+.km_panel .km_panel_element.uff_ucf .km_panel_element_stat.second,
+.km_panel .km_panel_element.uff_ucf .km_panel_element_unit.second {
+    left: 175px; }
+.km_panel .km_panel_element.uff_ucf .km_panel_element_stat {
+    font-size: 17px;
+    top: 30px; }
+.km_panel .km_panel_element.uff_ucf .km_panel_element_unit {
+    font-size: 11px;
+    top: 55px; }
+.km_panel .km_panel_element.uff_ucf img.main_icon {
+    height: 22px;
+    left: 10px;
+    top: 32px; }
+.km_panel .km_panel_element.deliveries .km_panel_element_stat, .km_panel .km_panel_element.deliveries .km_panel_element_unit {
+    left: 45px; }
+.km_panel .km_panel_element.deliveries .km_panel_element_stat.second, .km_panel .km_panel_element.deliveries .km_panel_element_unit.second {
+    left: 90px; }
+.km_panel .km_panel_element_title {
+    color: #444444;
+    font-size: 11px;
+    position: absolute;
+    display: block; }
+.km_panel .km_panel_element_actions {
+    position: absolute; }
+.km_panel a.km_panel_element_action, .km_panel a.km_panel_element_action:link, .km_panel a.km_panel_element_action:hover, .km_panel a.km_panel_element_action:active, .km_panel a.km_panel_element_action:visited {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    border: 0 none;
+    position: relative;
+    float: right;
+    width: 14px;
+    height: 16px;
+    overflow: hidden;
+    margin: 0 0 0 10px; }
+.km_panel a.km_panel_element_action img {
+    width: 14px;
+    height: 28px;
+    position: absolute;
+    left: 0px;
+    top: 0px; }
+.km_panel a.km_panel_element_action:hover img, .km_panel a.km_panel_element_action.active img {
+    top: -14px; }
+.km_panel img.main_icon {
+    position: absolute; }
+.km_panel .km_panel_element_stat, .km_panel .km_panel_element_unit {
+    color: #444444;
+    position: absolute; }
+.km_panel_separator {
+    background: none repeat scroll 0 0 #000;
+    height: 18px; }
+.km_panel_separator h1.km_panel_separator_title {
+    color: #FFFFFF;
+    font-size: 11px;
+    text-align: center;
+    display: block;
+    padding: 3px 0 0 0; }
+
+.fmx_dialog_container .fmx_dialog_header {
+    padding: 20px 20px 0 0;
+    border: 0 none; }
+
+#select_dialog {
+    font-weight: 300;
+    text-align: center; }
+#select_dialog #select_dialog_header_title {
+    font-size: 32px;
+    margin: 0 0 15px 0; }
+#select_dialog #select_dialog_header_subtitle {
+    font-size: 16px;
+    margin: 0 0 15px 0; }
+#select_dialog .select_dialog_filter {
+    margin: 0 0 20px 53px; }
+#select_dialog .select_dialog_filter .sdf_top_index,
+#select_dialog .select_dialog_filter .sdf_top_content {
+    float: left; }
+#select_dialog .select_dialog_filter .sdf_top_index {
+    margin: 5px 18px 0 0; }
+#select_dialog .select_dialog_filter .sdf_bottom {
+    margin: 5px 0 0 0; }
+#select_dialog .select_dialog_filter .sdf_bottom_result,
+#select_dialog .select_dialog_filter .sdf_bottom_remove_btn {
+    float: left; }
+#select_dialog .select_dialog_filter .sdf_bottom_result {
+    display: block;
+    width: 250px; }
+#select_dialog .select_dialog_filter a.sdf_bottom_remove_btn, #select_dialog .select_dialog_filter a.sdf_bottom_remove_btn:link, #select_dialog .select_dialog_filter a.sdf_bottom_remove_btn:hover, #select_dialog .select_dialog_filter a.sdf_bottom_remove_btn:active, #select_dialog .select_dialog_filter a.sdf_bottom_remove_btn:visited {
+    text-decoration: none;
+    color: black; }
+#select_dialog a#select_dialog_btn, #select_dialog a#select_dialog_btn:link, #select_dialog a#select_dialog_btn:hover, #select_dialog a#select_dialog_btn:active, #select_dialog a#select_dialog_btn:visited {
+    display: block;
+    width: 145px;
+    padding: 15px 0 15px 0;
+    margin: 0 auto; }
